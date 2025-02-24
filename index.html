@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hashmatullah Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/973d6ee8a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="photos/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Software engineer</p>
+                <h1>Hi, I am <span> Hashmatullah Ghani </span> <br> from United States Of America </h1>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="photos/profilepic.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub_title">About Me</h1>
+                    <p> I'm Hashmatullah Ghani, a Computer Science major at the University of Virginia. Passionate about learning and 
+                        growing in software development, algorithms, and machine learning. I'm currently seeking internship and job 
+                        opportunities to apply my skills and gain hands-on experience. Feel free to connect!</p>
+
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br> Java, C++, Python, C, JavaScript, TypeScript – Proficient in multiple programming languages for software development, data structures, and algorithms.</li>
+                                <li><span>Web Development</span><br> HTML, CSS – Front-end development for structuring and styling responsive web pages.
+                                    ReactJS, Vue.js, Node.js – Experience with modern web frameworks to build interactive and scalable web applications.</li>
+                                <li><span>Software Build & Testing</span><br> Gradle/Maven – Familiar with dependency management and build automation for Java projects.
+                                    JUnit – Writing and running unit tests to ensure software reliability and correctness.</li>
+                                    <li><span>Operating Systems & Development Environments</span><br> Linux – Comfortable working with Linux environments, including system navigation, scripting, and software development.</li>
+                                
+                            </ul>
+
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Feb 2024 - Aug 2024 </span><br> IT- Help Desk at Ransum</li>
+                                <li><span>May 2023 - Aug 2023 </span><br> Sales Associate at Walmart</li>
+                                <li><span>2024 </span><br> Web & Software development</li>
+                                <li><span>2024 </span><br> AI Chatbot development</li>
+
+                                
+                            </ul>
+
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2018 - 2022 </span><br> Colgan High school</li>
+                                <li><span>2022 - 2024</span><br> Nova community college</li>
+                                <li><span> 2024 - 2026</span><br> University Of Virginia</li>
+                        
+                            </ul>
+
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------services----------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub_title">My Services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Build and maintain websites using HTML, CSS, JavaScript, and modern frameworks like ReactJS and Vue.js. Ensure responsive and user-friendly designs.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Customer Support & Issue Resolution</h2>
+                    <p>Offer technical and customer support through multiple channels, including phone, email, and chat. Document solutions to improve efficiency.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Git & Version Control Assistance</h2>
+                    <p>Provide Git and GitHub support, helping teams with version control, repository management, and collaborative workflows.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-----------portfolio--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="photos/work1.png">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>A simple global weather app with real-time updates on temperature, wind, and more. Stay prepared anywhere!
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="photos/work2.png">
+                    <div class="layer">
+                        <h3>Ai ChatBot Receptionist</h3>
+                        <p>A smart chatbot for plumbing companies that handles customer inquiries, schedules appointments, and provides quick support—saving time and improving service!
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="photos/work5.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>A basic and easy-to-use calculator for quick math operations like addition, subtraction, multiplication, and division. Simple and efficient!
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!----------------contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub_title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>hghani432@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>571-775-0414</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/hashmatullah-ghani/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/hashmat-beep"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="photos/Hashmat Final Resume.pdf" download class="btn btn2">Download Resume</a>
+
+
+
+
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+    
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+    
+            document.getElementById(tabname).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>
+
+    <script>
+        
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+
+
+    </script>
+    
+
+
+</body>
+</html>
