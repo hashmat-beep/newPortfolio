@@ -14,7 +14,7 @@
             <nav>
                 <img src="photos/logo2.png" class="logo">
                 <ul id="sidemenu">
-                    <li> <a href="header">Home</a></li>
+                    <li> <a href="#header">Home</a></li>
                     <li> <a href="#about">About</a></li>
                     <li> <a href="#services">Services</a></li>
                     <li> <a href="#portfolio">Portfolio</a></li>
@@ -26,7 +26,7 @@
             </nav>
             <div class="header-text">
                 <p>Software engineer</p>
-                <h1>Hi, I am <span> Hashmatullah Ghani </span> <br> from United States Of America </h1>
+                <h1>Hi, I am <span> Hashmatullah Ghani </span> <br> Computer science student at University Of Virginia </h1>
             </div>
 
         </div>
@@ -99,14 +99,14 @@
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Development</h2>
                     <p>Build and maintain websites using HTML, CSS, JavaScript, and modern frameworks like ReactJS and Vue.js. Ensure responsive and user-friendly designs.</p>
-                    <a href="#">Learn more</a>
+                    
                 </div>
 
                 <div>
                     <i class="fa-solid fa-crop-simple"></i>
                     <h2>Customer Support & Issue Resolution</h2>
                     <p>Offer technical and customer support through multiple channels, including phone, email, and chat. Document solutions to improve efficiency.</p>
-                    <a href="#">Learn more</a>
+                    
                 </div>
 
 
@@ -114,7 +114,7 @@
                     <i class="fa-brands fa-app-store"></i>
                     <h2>Git & Version Control Assistance</h2>
                     <p>Provide Git and GitHub support, helping teams with version control, repository management, and collaborative workflows.</p>
-                    <a href="#">Learn more</a>
+                    
                 </div>
 
 
@@ -186,13 +186,14 @@
 
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">submit</button>
 
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
 
@@ -236,7 +237,24 @@
 
 
     </script>
-    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzJHr-2CEGXO6nSnHKN9w3AdsZ_azAL_on7TPABY4QgmRe2emkJl803Chk3Uio81Jzv/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 
 
 </body>
